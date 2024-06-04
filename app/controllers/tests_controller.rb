@@ -7,5 +7,9 @@ class TestsController < Simpler::Controller
   def create
 
   end
+  
+  def show
+
+  end
 
 end
