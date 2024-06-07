@@ -18,6 +18,7 @@ module Simpler
       set_default_headers
       send(action)
       write_response
+      
 
       @response.finish
     end
@@ -29,6 +30,7 @@ module Simpler
     end
 
     def set_default_headers
+      
       @response['Content-Type'] = 'text/html'
     end
 
@@ -48,6 +50,18 @@ module Simpler
 
     def render(template)
       @request.env['simpler.template'] = template
+    end
+
+    def headers(hash)
+      hash.each_pair { |key, value| header(key, value) }
+    end
+
+    def header(key, value)
+      @response[key.to_s] = value.to_s
+    end
+
+    def status(status)
+      @response.status = status
     end
 
   end
