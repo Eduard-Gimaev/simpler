@@ -15,10 +15,9 @@ module Simpler
       @request.env['simpler.controller'] = self
       @request.env['simpler.action'] = action
 
-      
+      set_default_headers
       send(action)
       write_response
-      set_default_headers
 
       @response.finish
     end
