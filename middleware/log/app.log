@@ -1,0 +1,10 @@
+I, [2024-06-10T19:03:33.543988 #63544]  INFO -- : Request: GET /
+I, [2024-06-10T19:03:33.544139 #63544]  INFO -- : Handler: NilClass#
+I, [2024-06-10T19:03:33.544173 #63544]  INFO -- : Params:  GET: , POST: 
+I, [2024-06-10T19:03:33.544191 #63544]  INFO -- : Response: 404 text/html 
+
+I, [2024-06-10T19:03:33.574612 #63544]  INFO -- : Request: GET /favicon.ico
+I, [2024-06-10T19:03:33.574730 #63544]  INFO -- : Handler: NilClass#
+I, [2024-06-10T19:03:33.574792 #63544]  INFO -- : Params:  GET: , POST: 
+I, [2024-06-10T19:03:33.574829 #63544]  INFO -- : Response: 404 text/html 
+
