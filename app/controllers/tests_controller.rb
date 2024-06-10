@@ -10,7 +10,8 @@ class TestsController < Simpler::Controller
   end
   
   def show
-    @test_id = params[:id]
+    status(201)
+    @test = Test.first(id: params['id'])
   end
 
 end

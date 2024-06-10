@@ -88,3 +88,23 @@ I, [2024-06-10T20:09:49.597805 #65592]  INFO -- : Handler: TestsController#index
 I, [2024-06-10T20:09:49.597872 #65592]  INFO -- : Params:  GET: , POST: 
 I, [2024-06-10T20:09:49.597908 #65592]  INFO -- : Response: 200 text/html 
 
+I, [2024-06-10T20:29:38.954655 #66530]  INFO -- : Request: GET /tests/101
+I, [2024-06-10T20:29:38.954736 #66530]  INFO -- : Handler: TestsController#index
+I, [2024-06-10T20:29:38.954771 #66530]  INFO -- : Params:  GET: , POST: 
+I, [2024-06-10T20:29:38.954789 #66530]  INFO -- : Response: 200 text/html 
+
+I, [2024-06-10T21:06:36.827009 #68646]  INFO -- : Request: GET /
+I, [2024-06-10T21:06:36.827069 #68646]  INFO -- : Handler: NilClass#
+I, [2024-06-10T21:06:36.827097 #68646]  INFO -- : Params:  GET: , POST: 
+I, [2024-06-10T21:06:36.827109 #68646]  INFO -- : Response: 404 text/html 
+
+I, [2024-06-10T21:06:47.287532 #68646]  INFO -- : Request: GET /tests/101
+I, [2024-06-10T21:06:47.287622 #68646]  INFO -- : Handler: TestsController#show
+I, [2024-06-10T21:06:47.287658 #68646]  INFO -- : Params:  GET: , POST: 
+I, [2024-06-10T21:06:47.287682 #68646]  INFO -- : Response: 201 text/html 
+
+I, [2024-06-10T21:06:57.374822 #68646]  INFO -- : Request: GET /tests
+I, [2024-06-10T21:06:57.375317 #68646]  INFO -- : Handler: TestsController#index
+I, [2024-06-10T21:06:57.375355 #68646]  INFO -- : Params:  GET: , POST: 
+I, [2024-06-10T21:06:57.375385 #68646]  INFO -- : Response: 200 text/html 
+
