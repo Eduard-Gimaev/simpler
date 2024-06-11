@@ -4,7 +4,7 @@ module Middleware
   class SimplerLogger
     def initialize(app, _logger)
       @app = app
-      @logger = Logger.new(File.expand_path('log/app.log', __dir__) || STDOUT)
+      @logger = Logger.new(File.expand_path('../log/app.log', __dir__) || STDOUT)
     end
 
     def call(env)

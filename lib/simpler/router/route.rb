@@ -30,7 +30,7 @@ module Simpler
             .map { |string| string.start_with?(':') ? '\d+' : string }
             .join('/')
             .concat('$')
-            .then { |regex| Regexp.new regex }
+            .then { |regex| Regexp.new (regex) }
       end
     end
   end
