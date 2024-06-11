@@ -29,6 +29,12 @@ module Simpler
     end
 
     def set_default_headers
+      if @request.env['simpler.template'].is_a?(Hash)
+        return @response['Content-Type'] =  case @request.env['simpler.template'].first[0]
+                                              when :plain then 'text/plain'
+                                              else 'text/html'
+                                            end
+      end
       @response['Content-Type'] = 'text/html'
     end
 
@@ -48,6 +54,18 @@ module Simpler
 
     def render(template)
       @request.env['simpler.template'] = template
+    end
+
+    def headers(hash)
+      hash.each_pair { |key, value| header(key, value) }
+    end
+
+    def header(key, value)
+      @response[key.to_s] = value.to_s
+    end
+
+    def status(status)
+      @response.status = status
     end
 
   end
